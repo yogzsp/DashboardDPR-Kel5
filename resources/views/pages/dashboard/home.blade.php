@@ -4,6 +4,9 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script src="{{ asset('js/chartjs/chart.js') }}"></script> -->
+    <!-- Pastikan ini ditempatkan sebelum kode JavaScript Anda -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 @endsection
 
 @section('content')
@@ -126,6 +129,56 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid">
+            <div class="p-5 mx-5">
+                <h1 class="title-logo" style="font-size:40px;">Data Insight</h1>
+                <div class="row row-cols-2 m-vh-100 border-solid border m-1 border-dark rounded-3 p-3 bg-white">
+                    <div class="col">
+                        <h1>Perbandingan Data</h1>
+                        <div class="row row-cols-2">
+                            <div class="col">
+                                <x-donutChart borderw="0.5" label='["saty","dua","tiga","empat"]' tag="dataHaha" data='[100,200,300,400]' bg='["#C8CFDA", "#ACB6C6", "#7A8CA6", "#2268D1"]'>
+                                    Nilai dari 
+                                </x-donutChart>
+                            </div>
+                            <div class="col">
+                                <x-donutChart label='["saty","dua","tiga","empat"]' tag="dataHahaHa" data='[100,200,300,400]' bg='["#C8CFDA", "#ACB6C6", "#7A8CA6", "#2268D1"]'>
+                                    Nilai dari 
+                                </x-donutChart>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h1>Harga Barang</h1>
+                        <x-lineChart label='["saty","dua","tiga","empat"]' tag="dataLine" data='[100,500,200,300]' bg='["red"]'>
+                            Nilai dari 
+                        </x-lineChart>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid my-3">
+            <div class="px-5">
+                <h1 class="px-5 title-logo"  style="font-size:40px;">Berita Baru</h1>
+            </div>
+            <div id="myCarousel" class="carousel slide px-5" data-bs-ride="carousel">
+                <div class="carousel-inner container-fluid px-5">
+                    <!-- Tempatkan slide carousel di sini -->
+                    <div class="carousel-item active">
+                        <div style="overflow:hidden;height:50vh;" class="rounded-4">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Slide 1">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div style="overflow:hidden;height:50vh;" class="rounded-4">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Slide 2">
+                        </div>
+                    </div>
+                    <!-- Tambahkan slide tambahan jika diperlukan -->
+                </div>
+            </div>
+
+        </div>
     </div>
 @endsection 
 
@@ -141,5 +194,7 @@
                 // Tambahan opsi lainnya sesuai kebutuhan
             });
         });
+        
+        var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'));
     </script>
 @endsection
