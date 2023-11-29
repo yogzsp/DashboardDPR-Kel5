@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\auth\Signup;
 use App\Http\Controllers\auth\Login;
 use App\Http\Controllers\Dashboard\Home;
+use App\Http\Controllers\Dashboard\Data;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +25,6 @@ use App\Http\Controllers\Dashboard\Home;
 Route::get('/login', [Login::class, "index"])->name("login-pages");
 Route::get('/signup', [Signup::class, "index"])->name("signup-pages");
 
-// home page
+// Dashboard page
 Route::get('/',[Home::class, "index"])->name("home-pages");
+Route::get('/data',[Data::class, "index"])->name("data-pages");

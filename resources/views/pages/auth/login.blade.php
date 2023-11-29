@@ -28,7 +28,7 @@
           <p>
             <a href="#" class="text-dark fw-bold">Forget Password?</a>
             <br/>
-            <a href="#" class="text-dark">Continue Without Login</a>
+            <a href="{{route('home-pages')}}" class="text-dark">Continue Without Login</a>
           </p>
         <i>
       </div>

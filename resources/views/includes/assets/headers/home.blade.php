@@ -12,10 +12,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item px-3 fs-4">
-                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                <a class="nav-link active" aria-current="page" href="{{route('home-pages')}}">Beranda</a>
             </li>
             <li class="nav-item px-3 fs-4">
-                <a class="nav-link" href="#">Data</a>
+                <a class="nav-link" href="{{route('data-pages')}}">Data</a>
             </li>
             <li class="nav-item px-3 fs-4">
                 <a class="nav-link" href="#">Dashboard</a>
@@ -27,7 +27,9 @@
                 <a class="nav-link" href="#">Tentang</a>
             </li>
             <li class="nav-item px-3 fs-4">
-                <img src="{{ asset('images/main/profile.png') }}" alt="Rounded circle Image" class="rounded-circle" style="width:50px;height:50px;">
+                <a class="nav-link" href="{{route('login-pages')}}">
+                    <img src="{{ asset('images/main/profile.png') }}" alt="Rounded circle Image" class="rounded-circle" style="width:50px;height:50px;">
+                </a>
             </li>
         </ul>
     </div>
