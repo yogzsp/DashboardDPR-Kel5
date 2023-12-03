@@ -39,18 +39,26 @@
             <div class="row row-cols-4 w-50">
                 <div class="col">
                     <div class="rounded-3 icon-topik bg-white border border-secondary d-flex justify-content-center" style="width:200px;height:200px; overflow:hidden;">
-                        <img src="{{ asset('images/main/assets/icons/people.png') }}" style="width:100%;" class="align-self-end">
+                        <img src="{{ asset('images/main/assets/icons/pilot.png') }}" style="width:95%;" class="align-self-end">
                     </div>
                     <div class="title-topik text-center fw-bold fs-3">
-                        Penduduk
+                        Kereta
                     </div>
                 </div>
                 <div class="col">
                     <div class="rounded-3 icon-topik bg-white border border-secondary d-flex justify-content-center" style="width:200px;height:200px; overflow:hidden;">
-                        <img src="{{ asset('images/main/assets/icons/revenue.png') }}" style="width:100%;" class="align-self-end">
+                        <img src="{{ asset('images/main/assets/icons/pariwisata.png') }}" style="width:95%;" class="align-self-end">
                     </div>
                     <div class="title-topik text-center fw-bold fs-3">
-                        Ekonomi
+                        Pariwisata
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="rounded-3 icon-topik bg-white border border-secondary d-flex justify-content-center" style="width:200px;height:200px; overflow:hidden;">
+                        <img src="{{ asset('images/main/assets/icons/sailor.png') }}" style="width:82%;" class="align-self-end">
+                    </div>
+                    <div class="title-topik text-center fw-bold fs-3">
+                        Pelabuhan
                     </div>
                 </div>
                 <div class="col">
@@ -59,14 +67,6 @@
                     </div>
                     <div class="title-topik text-center fw-bold fs-3">
                         Kesehatan
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="rounded-3 icon-topik bg-white border border-secondary d-flex justify-content-center" style="width:200px;height:200px; overflow:hidden;">
-                        <img src="{{ asset('images/main/assets/icons/school.png') }}" style="width:100%;" class="align-self-end">
-                    </div>
-                    <div class="title-topik text-center fw-bold fs-3">
-                        Pendidikan
                     </div>
                 </div>
             </div>

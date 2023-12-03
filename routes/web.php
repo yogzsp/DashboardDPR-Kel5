@@ -5,6 +5,7 @@ use App\Http\Controllers\auth\Signup;
 use App\Http\Controllers\auth\Login;
 use App\Http\Controllers\Dashboard\Home;
 use App\Http\Controllers\Dashboard\Data;
+use App\Http\Controllers\Dashboard\Dataset;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,6 @@ Route::get('/signup', [Signup::class, "index"])->name("signup-pages");
 // Dashboard page
 Route::get('/',[Home::class, "index"])->name("home-pages");
 Route::get('/data',[Data::class, "index"])->name("data-pages");
+// dataset page
+Route::get('/dataset',[Dataset::class, "index"])->name("dataset-pages");
+Route::get('/dataset/view',[Dataset::class, "selectData"])->name("select-dataset");

@@ -34,7 +34,7 @@
         </div>
         <!-- card list -->
         <div class="container-fluid w-100 justify-content-between py-5">        
-            <div class="row row-cols-3">
+            <div class="row row-cols-2">
                 <div class="col d-flex justify-content-center">
                     <x-card1 title="Data" images="{{ asset('images/main/assets/1.png') }}">
                         Dapatkan data terkait Dewan Perwakilan
@@ -47,13 +47,6 @@
                         suatu informasi dari Dewan Perwakilan Rakyat
                         dalam bentuk dashboard yang telah
                         dimodifikasi.
-                    </x-card1>
-                </div>
-                <div class="col d-flex justify-content-center">
-                    <x-card1 title="Infografis" images="{{ asset('images/main/assets/3.png') }}">
-                        Dapatkan representasi visualisasi sebuah data
-                        dari Dewan Perwakilan Rakyat yang lebih mudah
-                        untuk dipahami. 
                     </x-card1>
                 </div>
             </div>
